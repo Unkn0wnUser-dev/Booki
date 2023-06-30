@@ -16,9 +16,13 @@
 
 <body>
   <div class="main-container">
+    <!-- HEADER -->
     <header class="site-header">
       <!-- HEADER LOGO & LINKS -->
-      <a href="/" alt="Logo Booki"><img src="./images/logo/Booki.png" alt="Logo du site"></a>
+      <a href="/" alt="Logo Booki">
+        <img src="./images/logo/Booki.png" srcset="./images/logo/Booki.png 1x,
+                   ./images/logo/Booki@3x.png 3x" alt="Logo du site">
+      </a>
       <nav class="nav-header" aria-label="Liens de navigation">
         <ul class="header-links">
           <li class="links"><a href="#hebergements">Hébergements</a></li>
@@ -28,12 +32,15 @@
     </header>
     <!-- MAIN -->
     <main class="site-main">
+
       <!-- INFO GROUP -->
       <section class="info-group">
         <div class="headline">
-          <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+          <h1 class="page-title">Trouvez votre hébergement pour des vacances
+            de rêve</h1>
           <p>En plein centre-ville ou en pleine nature</p>
         </div>
+
         <form class="search-bar" method="get" action="#">
           <label for="search_input" class="visually-hidden">Rechercher un
             hébergement</label>
@@ -52,6 +59,7 @@
             </button>
           </div>
         </form>
+
         <nav class="filter-bar" aria-label="Barre de filtres">
           <h2>Filtres</h2>
           <ul class="filter-list">
@@ -65,7 +73,7 @@
             </li>
             <li>
               <button type="button" class="button-filter">
-                <i class="fa-solid fa-money-bill-wave"></i>
+                <i class="fa-solid fa-person"></i>
                 <span class="filter">
                   Familial
                 </span>
@@ -89,16 +97,25 @@
             </li>
           </ul>
         </nav>
-        <div class="info-bar">
-          <i><img src="images/icon/Vector3.png" alt="information"></i>
-          <p>Plus de 500 logements sont disponibles dans cette ville</p>
+
+        <div class="infobar">
+          <div class="circle">
+            <i class="fa-solid fa-info"></i>
+          </div>
+          <span class="infobar-msg">
+            Plus de 500 logements sont disponibles dans cette ville
+          </span>
         </div>
+
       </section>
 
       <div class="hebergements-and-populaires">
+
         <!-- HEBERGEMENTS -->
         <section class="hebergements" id="hebergements">
-          <h2>Hébergements à Marseille</h2>
+          <div class="hebergements-title">
+            <h2>Hébergements à Marseille</h2>
+          </div>
           <div class="hebergements-cards">
             <article class="card">
               <img src="./images/hebergements/hotel-du-port.jpg" alt="Hôtel du port">
@@ -219,11 +236,12 @@
             <h4>Afficher plus</h4>
           </a>
         </section>
+
         <!-- POPULAIRES -->
         <section class="populaires">
           <div class="populaires-title">
             <h2>Les plus populaires</h2>
-            <i class="fas fa-chart-line" aria-hidden="true"></i>
+            <i class="fas fa-solid fa-chart-line" aria-hidden="true"></i>
           </div>
           <div class="populaires-cards">
             <article class="card">
@@ -286,6 +304,7 @@
           </div>
         </section>
       </div>
+
       <!-- ACTIVITES -->
       <section class="activites" id="activites">
         <h2>Activités à Marseille</h2>
@@ -309,6 +328,7 @@
         </div>
       </section>
     </main>
+
     <!-- FOOTER -->
     <footer class="site-footer">
       <section class="about">
